@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let bil1 = 100;
+        let bil2 = 200;
+        let bil3 = 300;
+        if (bil1>bil2 && bil1>bil3) {
+                console.log (bil1)
+        } else if (bil2>bil1 && bil2>bil3) {
+                console.log (bil2)
+        } else if (bil3>bil1 && bil3>bil2) {
+                console.log (bil3)
+        } else if (bil1==bil2 && bil1==bil3) {
+                console.log ("semua bilangan sama");
+        }
+
+        //nomor 3
+        let lampu = 10;
+        let ON = 1
+        if (lampu == 1) {
+            console.log ("ON")
+        } else if (lampu == 0) {
+            console.log ("OFF")
+        } else {
+            console.log ("Masukan angka 1 atau 0")
+        }
+
+        //nomor 2
+        let bilangan = 2
+        let sisa = bilangan %2
+
+        if (sisa == 0) {
+            console.log("Bilangan Genap")
+        }
+        else (
+            console.log("Bilangan Ganjil")
+        )
+        if (bilangan < 0) {
+            console.log ("Bilangan Negatif")
+        }
+        if (bilangan > 0) {
+            console.log ("Bilangan Positif")
+        }
+
+        //nomor 4
+        let harga1, harga2, harga3, total, diskon, bayar;
+
+        harga1 = Number(prompt("Masukan barang pertama:"));
+        harga2 = Number(prompt("Masukan barang kedua:"));
+        harga3 = Number(prompt("Masukan barang ketiga:"));
+        
+        total = harga1 + harga2 + harga3;
+
+        if (total > 10000) {
+            diskon = total * 0.1;
+            bayar = total - diskon;
+            console.log("Total harga: " + total);
+            console.log("Diskon 10%" + diskon);
+            console.log("Harga setelah diskon: " + bayar);
+        }
+
+        else {
+            diskon = 0;
+            bayar = total;
+            console.log("Total harga: " + total);
+            console.log("Tidak ada diskon");
+            console.log("Harga setelah diskon: " + bayar);
+        }
+
+        //nomor 5
+
+      let bil = 4;
+      if (bil < 6) {
+        console.log("gaji lembur Rp. 100.000")
+      } else if (bil == 6) {
+        console.log("gaji lembur Rp. 200.000")
+      } else if (bil > 6) {
+        console.log("gaji lembur Rp. 300.000")
+      }
+
+      //nomor 6
+      let air = 700;
+      if (air<=500) {
+        console.log("AMAN")
+      } else if (air<=600) {
+        console.log("WASPADA")
+      } else if (air<=650) {
+        console.log("SIAGA")
+      } else if (air>650) {
+        console.log("SIAGA 2")
+      }
+
+    //   //soal penerimaan siswa baru
+    // let jalur = "prestasi";
+    //   let nilai = 100;
+    //   let tes = 80;
+    //   if (nilai > 89 && nilai < 101){
+    //     console.log("sempurna & lolos")
+    //   } else if (nilai > 79 && nilai < 90) {
+    //     console.log("ikut tes mandiri")
+    //   } else if (tes > 78 && tes < 101) {
+    //     console.log ("lolos tes")
+    //   }
+
+      //cara bu duma
+      let nilai = 0;
+      let tesMandiri = 80;
+      let jalur = "rapot";
+
+      if (nilai >= 90 && nilai <= 100) {
+        console.log("Nilai sempurna")
+      } else if (nilai >= 75 && nilai < 90) {
+        if (jalur == "rapot") {
+        console.log ("anda lulus nilai lewat jalur rapot")
+      } else if (jalur == "prestasi") {
+        console.log ("anda lulus nilai lewat jalur prestasi")
+      }
+    } else {
+      if (tesMandiri >= 80) {
+        console.log("lolos tes masuk")
+      } else {
+        console.log ("tidak lolos masuk")
+      }
+    }
+
+    //Pengulangan pakai for
+    for (let z=0; z<=5;) {
+      console.log("")
+    }
+
+    //while
+    let x = 1
+    //x sama dengan satu
+    while (x<=10) {
+      //lalu jika x nya kurang dari 10
+      //maka x++ dan munculkan consolog ke layar
+        console.log('data x ke -', x)
+        x++
+    }
+
+    //Do While
+    let y = 10
+    //do adalah lakukan apa dulu
+    do {
+      console.log('data y ke-', y)
+      y++
+      //lalu naikan nilainya y++ selama
+    } while (y <= 5)
+
+      // bilangan ganjil pakai for
+      for (p = 1; p <= 50; p++) {
+        if (p % 2 == 1) {
+            console.log ('bilangan ganjil', p)
+        }
+    }
+
+    for(let n = 2; n <= 50; n++) {
+      if (n % 2 == 0) {
+        console.log ('genap')
+      }
+    }
+
+    //Do while
+    let p = 1
+        do {
+            p++
+            if (p % 2 == 0) {
+                console.log(p)
+            }
+        } while (p <=100)
+        
+        let o = 1
+        do {
+            o++
+            if (o % 2 == 1) {
+                console.log(o)
+            }
+        } while (o <=100)
+
+    </script>
+</body>
+</html>
